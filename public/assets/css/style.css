@@ -1,0 +1,181 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.navhead {
+  box-shadow: 0 2px 5px #f7ecec;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+.banner {
+  margin-top: 80px;
+  height: 100vh;
+}
+
+.landing {
+  background-image: url("/assets/img/landing-img.png");
+  background-size: cover;
+  margin-top: -500px;
+  height: 400px;
+  width: 400px;
+  /* Animate */
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: animate__backInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2.5s; /* don't forget to set a duration! */
+}
+
+.parent {
+  background-color: rgba(250, 247, 247, 1);
+  margin-top: -65px;
+}
+.parent1 {
+  background-color: rgba(250, 247, 247, 1);
+  margin-top: 60px;
+}
+
+.c-1 {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.white-cat {
+  background-image: url("/assets/img/white-cat.png");
+  height: 500px;
+  background-size: cover;
+  background-position-x: center;
+  /* Animate */
+  display: block;
+  margin: 0 0.5rem;
+  animation: animate__slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+h3::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #eaeaea;
+  padding-bottom: 5px;
+  width: 30%;
+  margin: auto;
+}
+
+.card-perawatan {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 5px 0 rgba(65, 45, 45, 0.1) !important;
+  width: 280px;
+  overflow: hidden;
+}
+
+.card-perawatan > img {
+  height: 280px;
+  width: 280px;
+  transition: 1s;
+}
+.card-perawatan > img:hover {
+  opacity: 0.5;
+}
+
+.card-perawatan:hover {
+  cursor: pointer;
+}
+
+.food {
+  margin-top: -50px;
+}
+
+label {
+  font-weight: bold;
+}
+.form-kontak {
+  margin-bottom: 50px;
+}
+.footer {
+  box-shadow: 0 -5px 5px -5px #d8d8d8;
+}
+.footer p {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .landing {
+    background-image: url("/assets/img/landing-img.png");
+    background-size: cover;
+    height: 180px;
+    width: 200px;
+    margin-top: -110px;
+  }
+  #btn {
+    margin-bottom: -220px;
+  }
+  .banner {
+    height: 500px;
+  }
+
+  .white-cat {
+    background-image: url("/assets/img/white-cat.png");
+    height: 300px;
+    width: 200px;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  .content-1 h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  #h3 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .card-perawatan {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 0 5px 0 rgba(65, 45, 45, 0.1) !important;
+    height: 350px;
+  }
+
+  .card-perawatan > img {
+    height: 280px;
+    transition: 1s;
+  }
+  .img-mid {
+    margin: 7px 0;
+  }
+
+  .food {
+    width: 80px;
+    height: 220px;
+    margin-bottom: -10px;
+  }
+
+  .form-kontak {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    height: 50px;
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    box-shadow: 0 -5px 5px -5px #d8d8d8;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  }
+  /* .footer {
+    height: 50px;
+    box-shadow: 0 -20px 20px -20px #d8d8d8;
+    bottom: 0;
+    position: fixed;
+  } */
+  .footer p {
+    font-size: 12px;
+    line-height: 50px;
+  }
+}
